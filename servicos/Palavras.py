@@ -17,6 +17,6 @@ palavras.initContainer([])
 app = Flask(__name__)
 
 @app.route('/palavras/analisar/<string:frase>',  methods=['GET'])
-def hello_world(frase):
+def analisarFrase(frase):
     frase = FraseUtil.getFrase(palavras, frase)
     return json.dumps(frase.palavras)
