@@ -4,8 +4,6 @@
 @author Alencar Rodrigo Hentges <alencarhentges@gmail.com>
 
 """
-from docutils.nodes import container
-
 from configuracoes import configuracoes
 from servicos.Palavras import app
 
