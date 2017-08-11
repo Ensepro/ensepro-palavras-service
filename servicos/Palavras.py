@@ -8,15 +8,22 @@
 import json
 import configuracoes
 from flask import Flask
+from flask import request
 from utils.DockerUtil import DockerUtil
 from utils.FraseUtil import FraseUtil
+from utils import StringUtil
 
 palavras = DockerUtil(configuracoes.getNomeContainer())
 palavras.initContainer([])
 
 app = Flask(__name__)
 
-@app.route('/palavras/analisar/<string:frase>',  methods=['GET'])
-def analisarFrase(frase):
-    frase = FraseUtil.getFrase(palavras, frase)
+@app.route('/palavras/analisar/',  methods=['GET'])
+def analisarFrase():
+    paramFrase = request.args.get('frase')
+
+    if StringUtil.isEmpty(paramFrase):
+        raise Exception("A frase a ser analisada de ser passada via parâmetro(?frase={sua_frase}).")
+
+    frase = FraseUtil.getFrase(palavras, paramFrase)
     return json.dumps(frase.palavras)
