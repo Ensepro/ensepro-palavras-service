@@ -2,13 +2,13 @@
  
 ## Chamada 
  
-´´´ 
+```
 http://0.0.0.0:9999/palavras/analisar?frase=Qual a idade de Alencar? 
-´´´ 
+````
  
 ## Retorno 
  
-´´´ 
+```
 [
     {
         "numero": 0,
@@ -108,4 +108,4 @@ http://0.0.0.0:9999/palavras/analisar?frase=Qual a idade de Alencar?
         "tagInicial": "?"
     }
 ]
-´´´
+```
