@@ -1,11 +1,10 @@
 {
-  "container":{
-      "nome": "palavras",
-      "script": "root/dPalavras"
-  },
-
-  "servico":{
-      "porta": 5001,
-      "debug": false
-  }
+    "container": {
+        "nome": "palavras",
+        "script": "root/dPalavras"
+    },
+    "servico": {
+        "porta": 8091,
+        "debug": false
+    }
 }
