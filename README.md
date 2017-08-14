@@ -3,7 +3,7 @@
 ## Chamada 
  
 ```
-http://0.0.0.0:9999/palavras/analisar?frase=Qual a idade de Alencar? 
+http://127.0.0.1:8091/palavras/analisar?frase=Qua é a idade de Alencar?
 ```
  
 ## Retorno 
@@ -16,34 +16,44 @@ http://0.0.0.0:9999/palavras/analisar?frase=Qual a idade de Alencar?
         "palavraOriginal": "",
         "palavraCanonica": "",
         "tags": [],
-        "tagInicial": "X:par"
+        "tagInicial": "QUE:fcl"
     },
     {
         "numero": 1,
         "nivel": "1",
-        "palavraOriginal": "Qual",
-        "palavraCanonica": "qual",
+        "palavraOriginal": "Qua",
+        "palavraCanonica": "qua",
         "tags": [
-            "",
-            "",
-            "<*>",
-            "",
-            "DET",
-            "M/F",
-            "S"
+            "<*>"
         ],
-        "tagInicial": "CJT:pron-int"
+        "tagInicial": "fA:prp"
     },
     {
         "numero": 2,
         "nivel": "1",
-        "palavraOriginal": "",
-        "palavraCanonica": "",
-        "tags": [],
-        "tagInicial": "CJT:np"
+        "palavraOriginal": "\u00e9",
+        "palavraCanonica": "ser",
+        "tags": [
+            "",
+            "",
+            "",
+            "PR",
+            "3S",
+            "IND",
+            "VFIN"
+        ],
+        "tagInicial": "P:v-fin"
     },
     {
         "numero": 3,
+        "nivel": "1",
+        "palavraOriginal": "",
+        "palavraCanonica": "",
+        "tags": [],
+        "tagInicial": "Cs:np"
+    },
+    {
+        "numero": 4,
         "nivel": "2",
         "palavraOriginal": "a",
         "palavraCanonica": "o",
@@ -55,12 +65,11 @@ http://0.0.0.0:9999/palavras/analisar?frase=Qual a idade de Alencar?
         "tagInicial": "DN:art"
     },
     {
-        "numero": 4,
+        "numero": 5,
         "nivel": "2",
         "palavraOriginal": "idade",
         "palavraCanonica": "idade",
         "tags": [
-            "",
             "",
             "",
             "F",
@@ -69,7 +78,7 @@ http://0.0.0.0:9999/palavras/analisar?frase=Qual a idade de Alencar?
         "tagInicial": "H:n"
     },
     {
-        "numero": 5,
+        "numero": 6,
         "nivel": "2",
         "palavraOriginal": "",
         "palavraCanonica": "",
@@ -77,7 +86,7 @@ http://0.0.0.0:9999/palavras/analisar?frase=Qual a idade de Alencar?
         "tagInicial": "DN:pp"
     },
     {
-        "numero": 6,
+        "numero": 7,
         "nivel": "3",
         "palavraOriginal": "de",
         "palavraCanonica": "de",
@@ -87,7 +96,7 @@ http://0.0.0.0:9999/palavras/analisar?frase=Qual a idade de Alencar?
         "tagInicial": "H:prp"
     },
     {
-        "numero": 7,
+        "numero": 8,
         "nivel": "3",
         "palavraOriginal": "Alencar",
         "palavraCanonica": "Alencar",
@@ -100,7 +109,7 @@ http://0.0.0.0:9999/palavras/analisar?frase=Qual a idade de Alencar?
         "tagInicial": "DP:prop"
     },
     {
-        "numero": 8,
+        "numero": 9,
         "nivel": "1",
         "palavraOriginal": "",
         "palavraCanonica": "",
