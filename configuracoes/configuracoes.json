@@ -4,7 +4,7 @@
         "script": "root/dPalavras"
     },
     "servico": {
-        "porta": 8091,
+        "porta": 8099,
         "debug": false
     }
 }

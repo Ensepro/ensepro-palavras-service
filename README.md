@@ -54,7 +54,7 @@ Os caminhos estão fixos, verificar se estão de acordo com as configurações e
 ## Chamada 
  
 ```
-http://127.0.0.1:8091/palavras/analisar?frase=Qua é a idade de Alencar?
+http://127.0.0.1:8099/palavras/analisar?frase=Qua é a idade de Alencar?
 ```
  
 ## Retorno 

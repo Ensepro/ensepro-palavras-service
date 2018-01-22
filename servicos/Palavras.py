@@ -23,7 +23,8 @@ def analisarFrase():
     paramFrase = request.args.get('frase')
 
     if StringUtil.isEmpty(paramFrase):
-        raise Exception("A frase a ser analisada de ser passada via parâmetro(?frase={sua_frase}).")
+        error = "A frase a ser analisada de ser passada via parâmetro(?frase={sua_frase})."
+        return json.dumps({"error": error}), 400
 
     frase = FraseUtil.getFrase(palavras, paramFrase)
     return json.dumps(frase.palavras)

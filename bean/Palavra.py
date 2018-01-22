@@ -15,10 +15,10 @@ class Palavra(object):
     def __init__(self, numero, palavra):
         self.numero = numero
         self.nivel = 0
-        self.palavraOriginal = ""
-        self.palavraCanonica = ""
+        self.palavra_original = ""
+        self.palavra_canonica = ""
         self.tags = []
-        self.tagInicial = ""
+        self.tag_inicial = ""
 
         nivelEnd = StringUtil.find(palavra, ".")
         parentesesInicio = StringUtil.find(palavra, "(")
@@ -29,12 +29,12 @@ class Palavra(object):
 
         self.nivel = palavra[:nivelEnd]
         if (parentesesInicio == -1 or parentesesFim == -1):
-            self.tagInicial = palavra[nivelEnd + 2:]
+            self.tag_inicial = palavra[nivelEnd + 2:]
         else:
             tagsDentroParenteses = palavra[parentesesInicio + 1:(parentesesFim - len(palavra))].split()
-            self.tagInicial = palavra[nivelEnd + 2:parentesesInicio]
-            self.palavraOriginal = palavra.split()[-1]
-            self.palavraCanonica = tagsDentroParenteses[0].replace("\"", "")
+            self.tag_inicial = palavra[nivelEnd + 2:parentesesInicio]
+            self.palavra_original = palavra.split()[-1]
+            self.palavra_canonica = tagsDentroParenteses[0].replace("\"", "")
             self.tags = tagsDentroParenteses[1:]
 
     def to_json(self):
