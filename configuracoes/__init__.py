@@ -5,6 +5,5 @@
 
 """
 
-from .Configuracoes import getNomeContainer
-from .Configuracoes import getScriptContainer
+from .Configuracoes import getScriptTerminal
 from .Configuracoes import configuracoes

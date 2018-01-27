@@ -7,7 +7,6 @@
 
 
 from . import ConverterUtil
-from . import DockerUtil
 from . import FraseUtil
 from . import StringUtil
 from . import TerminalUtil

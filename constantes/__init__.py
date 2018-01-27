@@ -6,4 +6,3 @@
 """
 
 from . import StringConstantes
-from . import DockerConstantes

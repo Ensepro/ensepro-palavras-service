@@ -10,7 +10,6 @@ from constantes.StringConstantes import UTF_8
 
 fromFile = "../configuracoes/configuracoes.json"
 
-
 """
 Carrega as configurações do arquivo 'fromFile' (deve estar no formato json)
 :param fromFile:
@@ -19,9 +18,5 @@ Carrega as configurações do arquivo 'fromFile' (deve estar no formato json)
 configuracoes = json.loads(open(fromFile, 'r', encoding=UTF_8).read())
 
 
-
-def getNomeContainer():
-    return configuracoes["container"]["nome"]
-
-def getScriptContainer():
-    return configuracoes["container"]["script"]
+def getScriptTerminal() -> str:
+    return configuracoes["script"]

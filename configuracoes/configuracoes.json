@@ -1,10 +1,7 @@
 {
-    "container": {
-        "nome": "palavras",
-        "script": "root/dPalavras"
-    },
+    "script": "docker exec palavras root/palavrasTree \"{frase}\"",
     "servico": {
-        "porta": 8091,
+        "porta": 8099,
         "debug": false
     }
 }
