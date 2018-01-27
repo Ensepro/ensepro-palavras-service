@@ -6,15 +6,10 @@
 """
 
 import json
-import configuracoes
 from flask import Flask
 from flask import request
-from utils.DockerUtil import DockerUtil
 from utils.FraseUtil import FraseUtil
 from utils import StringUtil
-
-palavras = DockerUtil(configuracoes.getNomeContainer())
-palavras.initContainer([])
 
 app = Flask(__name__)
 
@@ -26,5 +21,5 @@ def analisarFrase():
         error = "A frase a ser analisada de ser passada via parâmetro(?frase={sua_frase})."
         return json.dumps({"error": error}), 400
 
-    frase = FraseUtil.getFrase(palavras, paramFrase)
+    frase = FraseUtil.getFrase(paramFrase)
     return json.dumps(frase.palavras)

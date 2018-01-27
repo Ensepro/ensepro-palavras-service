@@ -6,7 +6,7 @@
 """
 
 from bean.Frase import Frase
-from utils import DockerUtil
+from utils import TerminalUtil
 from utils import StringUtil
 from constantes.StringConstantes import BREAK_LINE
 from constantes.StringConstantes import TAB
@@ -15,14 +15,14 @@ import configuracoes
 
 class FraseUtil(object):
     @staticmethod
-    def etapa1_getResultadoPalavras(palavras: DockerUtil, frase):
+    def etapa1_getResultadoPalavras(frase):
         """
         Irá executar o comando "SCRIPT "frase"
         :param palavras: Objeto do tipo DockerUtil que terá o link com o container desejado.
         :param frase: frase a ser analisada
         :return: Retorna as informações sem nenehum tipo de modificação
         """
-        return palavras.dockerExec([configuracoes.getScriptContainer(), "\"" + frase + "\""])
+        return TerminalUtil.getResultadoTerminalUTF8(configuracoes.getScriptTerminal().format(frase=frase))
 
     @staticmethod
     def etapa2_removeDadosNaoNecessarios(etapa1_retorno_palavras):
@@ -58,8 +58,8 @@ class FraseUtil(object):
         return [(str(item.count("=")) + ". " + item.replace("=", "")) for item in etapa2_lista]
 
     @staticmethod
-    def getFrase(palavras: DockerUtil, frase: str) -> Frase:
-        etapa1 = FraseUtil.etapa1_getResultadoPalavras(palavras, frase)
+    def getFrase(frase: str) -> Frase:
+        etapa1 = FraseUtil.etapa1_getResultadoPalavras(frase)
         # print(etapa1)
         etapa2 = FraseUtil.etapa2_removeDadosNaoNecessarios(etapa1)
         etapa3 = FraseUtil.etapa3_trocaIgualPorNivel(etapa2)
