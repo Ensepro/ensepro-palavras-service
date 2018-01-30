@@ -64,26 +64,26 @@ http://127.0.0.1:8099/palavras/analisar?frase=Qua é a idade de Alencar?
     {
         "numero": 0,
         "nivel": "0",
-        "palavraOriginal": "",
-        "palavraCanonica": "",
+        "palavra_original": "",
+        "palavra_canonica": "",
         "tags": [],
-        "tagInicial": "QUE:fcl"
+        "tag_inicial": "QUE:fcl"
     },
     {
         "numero": 1,
         "nivel": "1",
-        "palavraOriginal": "Qua",
-        "palavraCanonica": "qua",
+        "palavra_original": "Qua",
+        "palavra_canonica": "qua",
         "tags": [
             "<*>"
         ],
-        "tagInicial": "fA:prp"
+        "tag_inicial": "fA:prp"
     },
     {
         "numero": 2,
         "nivel": "1",
-        "palavraOriginal": "\u00e9",
-        "palavraCanonica": "ser",
+        "palavra_original": "\u00e9",
+        "palavra_canonica": "ser",
         "tags": [
             "",
             "",
@@ -93,79 +93,79 @@ http://127.0.0.1:8099/palavras/analisar?frase=Qua é a idade de Alencar?
             "IND",
             "VFIN"
         ],
-        "tagInicial": "P:v-fin"
+        "tag_inicial": "P:v-fin"
     },
     {
         "numero": 3,
         "nivel": "1",
-        "palavraOriginal": "",
-        "palavraCanonica": "",
+        "palavra_original": "",
+        "palavra_canonica": "",
         "tags": [],
-        "tagInicial": "Cs:np"
+        "tag_inicial": "Cs:np"
     },
     {
         "numero": 4,
         "nivel": "2",
-        "palavraOriginal": "a",
-        "palavraCanonica": "o",
+        "palavra_original": "a",
+        "palavra_canonica": "o",
         "tags": [
             "",
             "F",
             "S"
         ],
-        "tagInicial": "DN:art"
+        "tag_inicial": "DN:art"
     },
     {
         "numero": 5,
         "nivel": "2",
-        "palavraOriginal": "idade",
-        "palavraCanonica": "idade",
+        "palavra_original": "idade",
+        "palavra_canonica": "idade",
         "tags": [
             "",
             "",
             "F",
             "S"
         ],
-        "tagInicial": "H:n"
+        "tag_inicial": "H:n"
     },
     {
         "numero": 6,
         "nivel": "2",
-        "palavraOriginal": "",
-        "palavraCanonica": "",
+        "palavra_original": "",
+        "palavra_canonica": "",
         "tags": [],
-        "tagInicial": "DN:pp"
+        "tag_inicial": "DN:pp"
     },
     {
         "numero": 7,
         "nivel": "3",
-        "palavraOriginal": "de",
-        "palavraCanonica": "de",
+        "palavra_original": "de",
+        "palavra_canonica": "de",
         "tags": [
             ""
         ],
-        "tagInicial": "H:prp"
+        "tag_inicial": "H:prp"
     },
     {
         "numero": 8,
         "nivel": "3",
-        "palavraOriginal": "Alencar",
-        "palavraCanonica": "Alencar",
+        "palavra_original": "Alencar",
+        "palavra_canonica": "Alencar",
         "tags": [
             "",
             "<*>",
             "M",
             "S"
         ],
-        "tagInicial": "DP:prop"
+        "tag_inicial": "DP:prop"
     },
     {
         "numero": 9,
         "nivel": "1",
-        "palavraOriginal": "",
-        "palavraCanonica": "",
+        "palavra_original": "",
+        "palavra_canonica": "",
         "tags": [],
-        "tagInicial": "?"
+        "tag_inicial": "?"
     }
 ]
 ```
