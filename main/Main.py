@@ -4,6 +4,11 @@
 @author Alencar Rodrigo Hentges <alencarhentges@gmail.com>
 
 """
+import sys
+import os
+sys.path.append(os.path.abspath("../"))
+
+
 from configuracoes import configuracoes
 from servicos.Palavras import app
 
