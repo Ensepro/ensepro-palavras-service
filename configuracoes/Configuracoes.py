@@ -8,7 +8,16 @@
 import json
 from constantes.StringConstantes import UTF_8
 
-fromFile = "../configuracoes/configuracoes.json"
+
+def ensepro_path():
+    import os
+    # Obtém o PATH para a pasta que contém este arquivo
+    this_file_directory = os.path.dirname(os.path.abspath(__file__))
+
+    return os.path.dirname(this_file_directory)
+
+
+fromFile = ensepro_path() + "/configuracoes/configuracoes.json"
 
 """
 Carrega as configurações do arquivo 'fromFile' (deve estar no formato json)
