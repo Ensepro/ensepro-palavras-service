@@ -33,8 +33,8 @@ class Palavra(object):
         else:
             tagsDentroParenteses = palavra[parentesesInicio + 1:(parentesesFim - len(palavra))].split()
             self.tag_inicial = palavra[nivelEnd + 2:parentesesInicio]
-            self.palavra_original = palavra.split()[-1]
-            self.palavra_canonica = tagsDentroParenteses[0].replace("\"", "")
+            self.palavra_original = palavra.split()[-1].replace("*", "")
+            self.palavra_canonica = tagsDentroParenteses[0].replace("\"", "").replace("*", "")
             self.tags = tagsDentroParenteses[1:]
 
     def to_json(self):
