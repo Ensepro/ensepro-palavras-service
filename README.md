@@ -1,5 +1,9 @@
 # Palavras Service 
  
+ 
+ Este README está desatualizado. Atualizarei assim que possível.
+ 
+ 
 ## Dependências
 
 1. Python 3
