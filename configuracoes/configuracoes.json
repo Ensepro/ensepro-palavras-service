@@ -1,5 +1,5 @@
 {
-    "script": "docker exec palavras root/palavrasTree \"{frase}\"",
+    "script": "/root/palavrasTree \"{frase}\"",
     "servico": {
         "porta": 8099,
         "debug": false
